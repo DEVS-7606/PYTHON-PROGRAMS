@@ -1,0 +1,30 @@
+a=float(input("Enter the value of a: "))
+b=float(input("Enter the value of b: "))
+c=float(input("Enter the value of c: "))
+d=(b**2)-(4*a*c)
+print(d)
+if(d>=0):
+    print((-b/(2*a))+((d**(1/2))/2*a))
+    print((-b/(2*a))-((d**(1/2))/2*a))
+else:
+    print(str(-b/(2*a))+"+"+str((-d)**0.5/(2*a))+"i")
+    print(str(-b/(2*a))+"-"+str((-d)**0.5/(2*a))+"i")
+
+print("-----------------------------------------------------")
+num1 = input("Enter value of a: ")
+num2 = input("Enter value of b: ")
+num3 = input("Enter value of c: ")
+a = float(num1)
+b = float(num2)
+c = float(num3)
+d = (b**2)-(4*a*c)
+print(d)
+if (d<0):
+     r1 = ((-((b**2)-(4*a*c)))**0.5)/(2*a)
+     print(str(-b/(2*a))+"+"+str(r1)+"i")
+     print(str(-b/(2*a))+"-"+str(r1)+"i")
+else:
+     r1=(-b+(b**2-4*a*c)**0.5)/(2*a)
+     r2=(-b-(b**2-4*a*c)**0.5)/(2*a)
+     print(r1)
+     print(r2)
